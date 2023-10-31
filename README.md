@@ -1,6 +1,10 @@
 # Keystorerelated
 
 
+
+firebase phone number auth ke liye ... build gradle me latest kotline bhi chahiye hoga so go to tools in andrid studio >kotlin> configure update> check the latest version ....update kotline version in the android level build gradle
+
+
 To obtain the SHA-1 and SHA-256 fingerprints (hashes) for your Android app, you can use the following steps:
 
 Using Gradle (Android Studio):
