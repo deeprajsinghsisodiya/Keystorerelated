@@ -12,6 +12,7 @@ In the Gradle scripts section, open the build.gradle (Module: app) file.
 In the android block, add the signingConfigs and buildTypes sections if they don't already exist or modify them if they do. Here's an example:
 gradle
 Copy code
+```
 android {
     // ...
     signingConfigs {
@@ -40,6 +41,7 @@ android {
         }
     }
 }
+```
 Replace the placeholders with your actual keystore file path and keystore information.
 Open a terminal window and navigate to your project directory.
 
@@ -49,12 +51,16 @@ For SHA-1:
 
 bash
 Copy code
+```
 keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android
+```
 For SHA-256:
 
 bash
 Copy code
+```
 keytool -list -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -v
+```
 Replace debug.keystore and other parameters with your own keystore file and alias if you're using a custom keystore.
 
 After running the command, you will see the SHA-1 and SHA-256 fingerprints in the terminal output.
